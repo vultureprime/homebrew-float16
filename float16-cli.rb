@@ -13,7 +13,7 @@ class Float16Cli < Formula
   end
 
   test do
-    output = shell_output("#{bin}/float16-cli --version")
+    output = shell_output("#{bin}/float63 --version")
     assert_match version.to_s, output
   end
 end
