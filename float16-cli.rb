@@ -1,5 +1,3 @@
-require "language/node"
-
 class Float16Cli < Formula
   desc "CLI tool for float63"
   homepage "https://github.com/vultureprime/homebrew-float16"
