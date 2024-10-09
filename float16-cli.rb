@@ -1,6 +1,7 @@
 class Float16Cli < Formula
   desc "CLI for interacting with serverless GPU services"
   homepage "https://float16.cloud/"
+  url "https://float16.cloud/"
   version "0.1.0"
   license "GNU Affero General Public License v3.0"
 
