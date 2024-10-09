@@ -13,6 +13,6 @@ class Float16Cli < Formula
 
   test do
     # Add a test command here
-    system "#{bin}/float63", "--version"
+    system "#{bin}/float6333", "--version"
   end
 end
