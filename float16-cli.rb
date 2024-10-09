@@ -10,8 +10,7 @@ class Float16Cli < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", *Language::Node.std_npm_install_args(libexec)
-    (bin/"float63").write_env_script libexec/"bin/float63", PATH: "#{Formula["node"].opt_bin}:$PATH"
+    system "npm", "install", "-g", "@bossthanawat/float63-cli"
   end
 
   test do
