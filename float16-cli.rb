@@ -5,18 +5,18 @@ class Float16Cli < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-darwin-arm64"
+      url "https://github.com/vultureprime/homebrew-float16/releases/download/#{version}/float16-cli-darwin-arm64"
       # sha256 "abc123..." # แทนที่ด้วย SHA256 ที่ถูกต้องของไฟล์ mac-arm64
     else
-      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-darwin-x64"
+      url "https://github.com/vultureprime/homebrew-float16/releases/download/#{version}/float16-cli-darwin-x64"
       # sha256 "def456..." # แทนที่ด้วย SHA256 ที่ถูกต้องของไฟล์ mac-x64
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-linux-arm64"
+      url "https://github.com/vultureprime/homebrew-float16/releases/download/#{version}/float16-cli-linux-arm64"
       # sha256 "ghi789..." # แทนที่ด้วย SHA256 ที่ถูกต้องของไฟล์ linux-arm64
     else
-      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-linux-x64"
+      url "https://github.com/vultureprime/homebrew-float16/releases/download/#{version}/float16-cli-linux-x64"
       # sha256 "jkl012..." # แทนที่ด้วย SHA256 ที่ถูกต้องของไฟล์ linux-x64
     end
   end
