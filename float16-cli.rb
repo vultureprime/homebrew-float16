@@ -22,10 +22,10 @@ class Float16Cli < Formula
   end
 
   def install
-    bin.install Dir["*"].first => "float16"
+    bin.install Dir["*"].first => "float16-cli"
   end
 
   test do
-    system "#{bin}/float16", "--version"
+    system "#{bin}/float16-cli", "--version"
   end
 end
