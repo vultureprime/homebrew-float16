@@ -1,14 +1,14 @@
 class Float16Cli < Formula
   desc "Your CLI tool for float16 operations"
   homepage "https://github.com/vultureprime/homebrew-float16"
-  version "0.1.0" # แทนที่ด้วยเวอร์ชันปัจจุบันของคุณ
+  version "0.0.1" # แทนที่ด้วยเวอร์ชันปัจจุบันของคุณ
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-mac-arm64"
+      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-darwin-arm64"
       # sha256 "abc123..." # แทนที่ด้วย SHA256 ที่ถูกต้องของไฟล์ mac-arm64
     else
-      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-mac-x64"
+      url "https://github.com/vultureprime/homebrew-float16/releases/download/v#{version}/float16-cli-darwin-x64"
       # sha256 "def456..." # แทนที่ด้วย SHA256 ที่ถูกต้องของไฟล์ mac-x64
     end
   elsif OS.linux?
