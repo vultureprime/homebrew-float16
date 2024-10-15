@@ -1,3 +1,4 @@
+require "language/node"
 class Float63Lab < Formula
   desc "An example formula"
   homepage "https://github.com/vultureprime/homebrew-float16"
