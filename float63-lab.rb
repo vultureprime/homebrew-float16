@@ -1,4 +1,4 @@
-class Float63Npm < Formula
+class Float63Lab < Formula
   desc "An example formula"
   homepage "https://github.com/vultureprime/homebrew-float16"
   url "https://registry.npmjs.org/@bossthanawat/float63-cli/-/float63-cli-0.0.1-alpha.3.tgz"
