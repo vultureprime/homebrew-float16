@@ -1,9 +1,8 @@
-require "language/node"
 class Float63Lab < Formula
   desc "An example formula"
   homepage "https://github.com/vultureprime/homebrew-float16"
   url "https://registry.npmjs.org/@bossthanawat/float63-cli/-/float63-cli-0.0.1-alpha.3.tgz"
-  version "0.0.1-alpha.3"
+  version "0.0.1-alpha.5"
   # sha256 "abc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc1"
 
   depends_on "node"
@@ -17,6 +16,6 @@ class Float63Lab < Formula
 
   test do
     # add a meaningful test here, version isn't usually meaningful
-    raise "Test not implemented."
+    assert_match version.to_s, shell_output("#{bin}/float63-cli --version")
   end
 end
